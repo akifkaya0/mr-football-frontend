@@ -1,1 +1,11 @@
-<p>type-of-game works!</p>
+<div class="type-of-game-container">
+  <div class="games-container">
+    <div class="dark-box" *ngFor="let game of games">
+      <div>
+        <a [routerLink]="game.pathName" class="game-name">{{game.name}}</a>
+        <p class="game-description">{{game.description}}</p>
+      </div>
+      <a [routerLink]="game.pathName" tuiIconButton type="button" appearance="flat" icon="tuiIconChevronRight" tuiMode="onDark"></a>
+    </div>
+  </div>
+</div>

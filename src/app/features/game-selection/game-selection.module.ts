@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { GameSelectionRoutingModule } from './game-selection-routing.module';
 import { TypeOfGameComponent } from './pages/type-of-game/type-of-game.component';
 import { GameSettingComponent } from './pages/game-setting/game-setting.component';
+import {TuiButtonModule, TuiModeModule} from '@taiga-ui/core';
 
 
 @NgModule({
@@ -13,7 +14,9 @@ import { GameSettingComponent } from './pages/game-setting/game-setting.componen
   ],
   imports: [
     CommonModule,
-    GameSelectionRoutingModule
+    GameSelectionRoutingModule,
+    TuiButtonModule,
+    TuiModeModule
   ]
 })
 export class GameSelectionModule { }

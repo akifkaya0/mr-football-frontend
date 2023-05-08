@@ -1,0 +1,43 @@
+.type-of-game-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.games-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 85%;
+}
+
+.dark-box {
+  width: 49%;
+  margin: 0.5%;
+  padding: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(37, 37, 37, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(44px);
+  -webkit-backdrop-filter: blur(44px);
+
+
+  .game-name{
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  .game-description{
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+  }
+
+}
